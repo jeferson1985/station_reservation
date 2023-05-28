@@ -1,0 +1,28 @@
+{
+  "name": "bookingreservation",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "axios": "^1.4.0",
+    "date-fns": "^2.30.0",
+    "moment": "^2.29.4",
+    "v-calendar": "^3.0.3",
+    "vue": "^3.2.47",
+    "vue-router": "^4.2.1",
+    "vue3-datepicker": "^0.3.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.1.0",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.3.2",
+    "vite": "^4.3.2"
+  }
+}
