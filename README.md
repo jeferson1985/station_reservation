@@ -1,12 +1,12 @@
-<h1 align="center">Aplicação reservas de estações de trabalho<h1/>
+<h1>Aplicação reservas de estações de trabalho<h1/>
   <p>Projeto criado com o intuito de resolver o problema que as empresas estão enfrentando depois do Covid19,
   com o aumento de colaboradores trabalhando de forma remota, após a pandemia as empresas necessitam que os colaboradores voltem trabalhar presencialmente de forma hibrida.
   Porém o espaço da empresa não suporta todos os colaboradores presencialmente.Pensando nesse problema foi criado uma aplicação que o usuário realiza a reserva do dia e horário que deseja ir trabalhar presencialmente,
   assim evitando a super lotação da empresa<p/>
-  <p>- Backend construído com Django 4.1 Rest Framework</>
+  <p>- Backend construído com Django 4.1 Rest Framework<p/>
 <p>- Instruções para rodar o projeto backend<p/>
 <p>- Faça o clone do repositório github (branch backend) usando o comando git clone "endereço do repositório"</p>
-p>- Crie um virtualenv com seguinte comando (Windows: python -m venv nome_venv)</>
+<p>- Crie um virtualenv com seguinte comando (Windows: python -m venv nome_venv)</>
 <p>- Ative o ambiente virtual(Windows: source nome_venv/Scripts/Activate)</p>
 <p>- Faça a instalação dos pacotes rodando o comando (pip install -r requirements.txt. Dica digite apenas pip install -r r a pressione tab em seguida enter)</p>
 <p>- Faça instalação de corsheaders para que seja possível a comunicação do frontend e backend, uma vez que ambos rodam em portas diferentes</p>
