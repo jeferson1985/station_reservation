@@ -45,10 +45,6 @@ export default {
   name: "Home",
   components: { SideBar, TitleBar, SidebarLinks, FlashMessages },
   data: () => ({
-    count: 0,
-    rooms_list: [],
-    name: "",
-    id: "",
   }),
   mounted() {
     title.value = "Bem Vindo";

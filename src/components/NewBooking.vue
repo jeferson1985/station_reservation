@@ -9,7 +9,7 @@
         <label for="" class="text-white">Digite seu nome</label>
         <input
           v-model="user"
-          type="number"
+          type="text"
           class="w-full border border-solid border-gray-300 rounded-lg px-2 py-2 outline-none mb-4"
         />
         <label for="" class="text-white">Data e Hora de ínicio</label>
@@ -30,17 +30,6 @@
           class="w-full border border-solid border-gray-300 rounded-lg px-2 py-2 outline-none mb-4"
           type="text"
         />
-        <!-- <select
-          v-model="room"
-          name=""
-          id=""
-          class="w-full border border-solid border-gray-300 rounded-lg px-2 py-2 outline-none mb-4"
-        >
-          <option value="">Selecione uma sala</option>
-          <option v-for="item in rooms_list" :key="item.id" :value="item.name">
-            {{item.name}}
-          </option>
-        </select> -->
         <div
           class="flex justify-center text-lg font-bold text-white w-full rounded-lg px-2 py-4 bg-purple-400 hover:bg-purple-900 cursor-pointer"
         >
@@ -72,7 +61,7 @@ import api from "../services/api.js";
 export default {
   name: "NewBooking",
   data: () => ({
-    date: {
+    data: {
       id: "",
       start_time: "",
       end_time: "",
@@ -80,14 +69,12 @@ export default {
       room: [],
       name: "",
       rooms_list: [],
-      isDark: false,
-      start: new Date(),
-      end: new Date(),
     },
   }),
   mounted() {
     title.value = "Faça sua reserva";
     this.getRooms();
+    this.clearData();
   },
   computed: {
     formatDate() {
@@ -109,10 +96,9 @@ export default {
           name: item.name,
         }));
         this.rooms_list = data;
-        
-        console.log("list rooms", this.rooms_list);
+
       } catch (error) {
-        console.log('error', error.detail)
+        console.log("error", error.detail);
       }
     },
     async sendBooking() {

@@ -45,7 +45,7 @@
                     <div class="flex">
                       <div class="ml-3">
                         <p class="text-gray-900 whitespace-no-wrap">
-                          {{ item.id }}
+                          {{ item.user }}
                         </p>
                       </div>
                     </div>
@@ -70,13 +70,6 @@
                     <span class="relative">{{ item.start_time }}</span>
                   </span>
                 </td>
-                  <!-- <td
-                    class="px-5 py-5 border-b border-gray-200 bg-white text-sm"
-                  >
-                    <p class="text-gray-900 whitespace-no-wrap">
-                      {{ item.start_time }}
-                    </p>
-                  </td> -->
                   <td
                     class="px-5 py-5 border-b border-gray-200 bg-white text-sm"
                   >
@@ -116,6 +109,7 @@ export default {
     end_time: "",
     room: "",
     name: "",
+    user: "",
     id: "",
   }),
   mounted() {
@@ -141,9 +135,9 @@ export default {
         end_time: this.format_date(item.end_time),
         room: item.room,
         id: item.id,
+        user: item.user
       }));
       this.rooms_list = data;
-      console.log("data", response);
       console.log('success')
       } catch (error) {
         console.log('error', error.detail)
