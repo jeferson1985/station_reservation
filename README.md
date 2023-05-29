@@ -1,4 +1,5 @@
 # Vue 3 + Vite
+# Tailwindcss
 # Aplicação de reservas de estações de trabalho
 - Projeto criado com o intuito de resolver o problema que as empresas estão enfrentando depois do Covid19,
 com o aumento de colaboradores trabalhando de forma remota, após a pandemia as empresas necessitam que os colaboradores voltem trabalhar presencialmente de forma hibrida.
