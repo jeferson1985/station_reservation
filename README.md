@@ -10,5 +10,5 @@
 <p>º Faça instalação de corsheaders para que seja possível a comunicação do frontend e backend, uma vez que ambos rodam em portas diferentes</p>
 <p>º Faça isso rodando o comando (python -m pip install django-cors-headers)</p>
 <p>º Subindo o servidor com o comando(python manage.py runserver)</p>
-<p>º Para abri o painel Admin do Django (http://localhost:8000/admin/)</p>
-<p>º Usuário: root Senha: root</p>
+<p>º Para abrir o painel Admin do Django (http://localhost:8000/admin/)</p>
+
